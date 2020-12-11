@@ -1,8 +1,16 @@
 # Change Log
 
-All notable changes to the "projectify-snippets" extension will be documented in this file.
+First version of Codecool curriculum projectify snippets contains snippets for the following content types:
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- yaml
+  - project
+  - task
+  - requirement
+  - general requirement
+- markdown
+  - inner/outer links
+  - background materials
+  - language switch block for multi-language projects
 
 ## [Unreleased]
 
