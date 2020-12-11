@@ -1,0 +1,25 @@
+{
+    "name": "projectify-snippets",
+    "displayName": "Projectify snippets",
+    "description": "Code snippets for projectify Codecool curriculum.",
+    "version": "1.0.0",
+    "publisher": "ngAtesz",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "yaml",
+                "path": "./snippets/yaml.code-snippets"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/markdown.code-snippets"
+            }
+        ]
+    }
+}

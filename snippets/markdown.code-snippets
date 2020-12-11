@@ -1,0 +1,64 @@
+{
+  // Content page snippets
+  "Youtube link": {
+    "prefix": "link-yt",
+    "body": [
+      "[![${1:IMAGE ALT TEXT HERE}](http://img.youtube.com/vi/${2:YOUTUBE VIDEO ID HERE}/0.jpg)](http://www.youtube.com/watch?v=$2)"
+    ],
+    "description": "Youtube link"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": ["![${1:IMAGE ALT TEXT HERE}](${2:image-link})"],
+    "description": "Image"
+  },
+
+  "Content page link": {
+    "prefix": "link-page",
+    "body": [
+      "[${1: page_name}](pages/${2: folder}/${3: markdown_file_name}.md)"
+    ],
+    "description": "Curriculum content page link"
+  },
+  "Tutorial link": {
+    "prefix": "link-tut",
+    "body": [
+      "[:baby_bottle: ${1: assignment_name}](../pages/${2: sub_page}/${3: markdown_file_name}.md)"
+    ],
+    "description": "Tutorial page link"
+  },
+
+  // Background materials
+  "Inner background material": {
+    "prefix": "link-in",
+    "body": [
+      "[${1|:exclamation:,:lollipop:,:open_book:,:ballot_box_with_check:|} ${2: background-material-title}](../../../pages/${3: sub-page}/${4: markdown-file-name}.md)"
+    ],
+    "description": "Curriculum content page reference"
+  },
+  "Outer background material": {
+    "prefix": "link-out",
+    "body": [
+      "[${1|:exclamation:,:lollipop:,:open_book:,:ballot_box_with_check:|} ${2: background-material-title}](${3: link})"
+    ],
+    "description": "Background material link"
+  },
+  "Video material": {
+    "prefix": "link-vid",
+    "body": [
+      "[:movie_camera: ${1: background-material-title}](${2: video-link})"
+    ],
+    "description": "Video material link"
+  },
+  "Language switch": {
+    "prefix": "if-lang",
+    "body": [
+      "{% if prog_lang == \"${1|python,java,csharp,javascript,kotlin,php|}\" %}",
+      "",
+      "{% elif prog_lang ==  \"${1|python,java,csharp,javascript,kotlin,php|}\" %}",
+      "",
+      "{% endif %}"
+    ],
+    "description": "Blueprint project language switch block"
+  }
+}
