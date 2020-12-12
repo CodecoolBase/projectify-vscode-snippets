@@ -6,7 +6,7 @@
       "name: ${1:project-name}",
       "title: ${2:Project title}",
       "prog-langs:",
-      "  ${3|python,java,csharp,javascript,php,kotlin|}:",
+      "  ${3|python,java,csharp,general,javascript,php,kotlin|}:",
       "    required-files:",
       "      - ${4:required-file}"
     ]
@@ -29,11 +29,7 @@
   },
   "Requirement": {
     "prefix": "req",
-    "body": [
-      "${1:requirement-id}:",
-      "  description: >-",
-      "    ${2:requirement-description}"
-    ],
+    "body": ["${1:requirement-id}:", "  description: >-", "    $0"],
     "description": "Project task requirement element"
   },
   "General": {

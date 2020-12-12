@@ -19,6 +19,10 @@
             {
                 "language": "markdown",
                 "path": "./snippets/markdown.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.code-snippets"
             }
         ]
     }

@@ -1,0 +1,18 @@
+{
+  "Quiz question": {
+    "prefix": "quiz-q",
+    "body": [
+      "{",
+      "  question: `${1:question}`",
+      "  answers: {",
+      "    a: \"${2:answer-a}\"",
+      "    b: \"${3:answer-b}\"",
+      "    c: \"${4:answer-c}\"",
+      "    d: \"${5:answer-d}\"",
+      "  },",
+      "  correctAnswers: [\"${6|a,b,c,d|}\"]",
+      "},"
+    ],
+    "description": "Quiz question template"
+  }
+}
