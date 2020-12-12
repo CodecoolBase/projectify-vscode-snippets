@@ -1,65 +1,32 @@
-# projectify-snippets README
+# Projectify snippets
 
-This is the README for your extension "projectify-snippets". After writing up a brief description, we recommend including the following sections.
+Developing curriculum in Codecool is not the simplest thing to do as a mentor.
+With this code snippet collection I would like to help to make easier and more pleasant to create new content in our curriculum.
+Before you dive into creating new projects please investigate our [projectify guide](https://codecool.atlassian.net/wiki/spaces/WOR/pages/982450199/Guide+How+to+create+projects+in+the+curriculum+Projectify)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### `project.yaml`
 
-For example if there is an image subfolder under your extension project workspace:
+* `proj`: generating `project.yaml` body
 
-\!\[feature X\]\(images/feature-x.png\)
+### `tasks.yaml`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+* `task`: creates a task with all necessary attributes
+* `req`: creates a requirement for a task
+* `general`: creates GENERAL requirement block
 
-## Requirements
+### Inside markdown files
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* `comps`: creates competencies block
+* `link-yt`: youtube link with thumbnail image
+* `link-in`: inner link reference to our materials, icon type selectable
+* `link-out`: outer link
+* `link-vid`: video link
+* `if-lang`: Project language switch in case of multi-language projects
+* `img`: image
+* `code`: Syntax highlighted code block
+* `uml`: basic plant uml template for class diagram
+* `quiz`: creates an empty quiz without questions
+* `quiz-q`: question template insidea a quiz block
+* `tutorial`: generates a skeleton for a tutorial page
