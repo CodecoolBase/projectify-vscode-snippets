@@ -17,12 +17,18 @@ With this code snippet collection I would like to help to make easier and more p
 * `req`: creates a requirement for a task
 * `general`: creates GENERAL requirement block
 
+![Tasks yaml snippets](images/tasks.gif)
+
+![General task](images/general.gif)
+
 ### `course.yaml`
 
 * `group`: generates a group node
 * `proj`: generates a project node
 * `tut`: generates a tutorial node
 * `mile`: generates a milestone node
+
+![Course yaml snippets](/images/course.gif)
 
 > You can read more about the different types of building blocks in coruse.yaml in our `[Guide: How to build and update a course in Journey](https://codecool.atlassian.net/wiki/spaces/WOR/pages/1276706892/Guide+How+to+build+and+update+a+course+in+Journey+technical+quide#Group)`
 
