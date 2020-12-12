@@ -94,11 +94,6 @@
     "body": ["---", "competencies:", "- ${1:competency}-${2|1,2,3|}", "---"],
     "description": "Competency headlines for materials"
   },
-  "Competency item": {
-    "prefix": "comp",
-    "body": ["- ${1:competency-name}-${2|1,2,3|}"],
-    "description": "Competency item in competencies headline"
-  },
 
   // Tutorial
   "Tutorial": {
