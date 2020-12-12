@@ -2,19 +2,29 @@
 
 Developing curriculum in Codecool is not the simplest thing to do as a mentor.
 With this code snippet collection I would like to help to make easier and more pleasant to create new content in our curriculum.
-Before you dive into creating new projects please investigate our [projectify guide](https://codecool.atlassian.net/wiki/spaces/WOR/pages/982450199/Guide+How+to+create+projects+in+the+curriculum+Projectify)
+
+> Before you dive into creating new projects please investigate our [projectify guide](https://codecool.atlassian.net/wiki/spaces/WOR/pages/982450199/Guide+How+to+create+projects+in+the+curriculum+Projectify)
 
 ## Features
 
 ### `project.yaml`
 
-* `proj`: generating `project.yaml` body
+* `proj-meta`: generating `project.yaml` body
 
 ### `tasks.yaml`
 
 * `task`: creates a task with all necessary attributes
 * `req`: creates a requirement for a task
 * `general`: creates GENERAL requirement block
+
+### `course.yaml`
+
+* `group`: generates a group node
+* `proj`: generates a project node
+* `tut`: generates a tutorial node
+* `mile`: generates a milestone node
+
+> You can read more about the different types of building blocks in coruse.yaml in our `[Guide: How to build and update a course in Journey](https://codecool.atlassian.net/wiki/spaces/WOR/pages/1276706892/Guide+How+to+build+and+update+a+course+in+Journey+technical+quide#Group)`
 
 ### Inside markdown files
 
@@ -28,7 +38,7 @@ Before you dive into creating new projects please investigate our [projectify gu
 * `code`: Syntax highlighted code block
 * `uml`: basic plant uml template for class diagram
 * `quiz`: creates an empty quiz without questions
-* `quiz-q`: question template insidea a quiz block
+* `quiz-q`: question template inside a a quiz block
 * `tutorial`: generates a skeleton for a tutorial page
 
 ## Installation
@@ -38,6 +48,6 @@ Before you dive into creating new projects please investigate our [projectify gu
 3. Navigate to the repo folder
 4. Run the following command:
 
-    `code --install-extension projectify-snippets-1.0.0.vsix`
+    `code --install-extension projectify-snippets-1.1.0.vsix`
 
 5. Restart your VS Code

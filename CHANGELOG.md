@@ -2,8 +2,19 @@
 
 First version of Codecool curriculum projectify snippet collection contains snippets for the following content types:
 
-- yaml
+## 1.1.0
+
+- course yaml snippets
   - project
+  - tutorial
+  - milestone
+- markdown
+  - tutorial simplified
+
+## 1.0.0
+
+- yaml
+  - project meta data
   - task
   - requirement
   - general requirement
@@ -14,8 +25,4 @@ First version of Codecool curriculum projectify snippet collection contains snip
   - quiz
   - syntax highlighted code block
   - tutorial
-  - copmetencies
-
-## [Unreleased]
-
-- Initial release
+  - competencies

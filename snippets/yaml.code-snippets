@@ -1,17 +1,21 @@
 {
-  // project.yaml related snippets
-  "Project": {
-    "prefix": "proj",
+  // project.yaml
+  "Project meta data": {
+    "prefix": "proj-meta",
     "body": [
+      "blueprint-version: 1",
       "name: ${1:project-name}",
       "title: ${2:Project title}",
       "prog-langs:",
-      "  ${3|python,java,csharp,general,javascript,php,kotlin|}:",
+      "  ${3|general,python,java,csharp,javascript,kotlin,typescript,angular,react,vue,shell,php|}:",
       "    required-files:",
-      "      - ${4:required-file}"
-    ]
+      "      - ${4:required-file}",
+      "      "
+    ],
+    "description": "Project meta data"
   },
-  // tasks.yaml related snippets
+
+  // tasks.yaml
   "Task": {
     "prefix": "task",
     "body": [
@@ -23,14 +27,15 @@
       "  requirements:",
       "    ${5:requirement-id}:",
       "      description: >-",
-      "        ${6:requirement-description}"
+      "        ${6:requirement-description}",
+      "    $0"
     ],
-    "description": "Project task"
+    "description": "Tasks are the main todos of the project, we can think of them as backlog items or user stories as well."
   },
   "Requirement": {
     "prefix": "req",
     "body": ["${1:requirement-id}:", "  description: >-", "    $0"],
-    "description": "Project task requirement element"
+    "description": "Requirements are attached to one of the tasks and act as acceptance criteria."
   },
   "General": {
     "prefix": "general",
@@ -41,6 +46,53 @@
       "      description: |-",
       "        ${2:requirement-description}"
     ],
-    "description": "Project general requirements"
+    "description": "Requirements that apply to the whole project (e.g. `There are no external imports in the program` or `The project is created with Spring.`)."
+  },
+
+  // course.yaml
+  "Course group": {
+    "prefix": "group",
+    "body": [
+      "- type: group",
+      "  label: \"${1:group-name}\"",
+      "  nodes:",
+      "    $0"
+    ],
+    "description": "Used for grouping on the sidebar (e.g. indicating modules and units or week pairs). Just like the root, a group node can contain a list of child nodes enabling nesting in the course definition"
+  },
+  "Project": {
+    "prefix": "proj",
+    "body": [
+      "- type: project",
+      "  id: prj-$1",
+      "  baseProjectName: ${1:project-name}",
+      "  progLanguage: ${2|general,python,java,csharp,javascript,kotlin,typescript,angular,react,vue,shell,php|}",
+      "  assignmentType: ${3|solo,team|}",
+      "  optional: ${4|false,true|}",
+      "$0"
+    ],
+    "description": "Projectified/blueprint projects. These are the main building blocks of a course."
+  },
+  "Tutorial": {
+    "prefix": "tut",
+    "body": [
+      "- type: tutorial",
+      "  id: tut-${1:tutorial-name}",
+      "  label: \"${2:Tutorial}\"",
+      "  contentPath: tutorials/$1.md",
+      "$0"
+    ],
+    "description": "Tutorials are static markdown pages in the curriculum repository under tutorials directory."
+  },
+  "Milestone": {
+    "prefix": "mile",
+    "body": [
+      "- type: milestone",
+      "  id: mil-${1:milestone-name}",
+      "  label: \"$1 milestone\"",
+      "  contentPath: milestones/$1.md",
+      "$0"
+    ],
+    "description": "A milestone is a measurement point for students' skills. It defines the competencies for students to successfully pass the milestone. Similar to tutorials, also static markdown pages in the curriculum repository under milestones directory. "
   }
 }
