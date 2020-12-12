@@ -16,23 +16,23 @@
     "prefix": "task",
     "body": [
       "${1:task-name}:",
-      "  title: ${2: title}",
+      "  title: ${2:title}",
       "  description: >-",
-      "    ${3: description}",
-      "  tags: [${4: tags}]",
+      "    ${3:description}",
+      "  tags: [${4:tags}]",
       "  requirements:",
-      "    ${5: requirement-id}:",
+      "    ${5:requirement-id}:",
       "      description: >-",
-      "        ${6: requirement-description}"
+      "        ${6:requirement-description}"
     ],
     "description": "Project task"
   },
   "Requirement": {
     "prefix": "req",
     "body": [
-      "${1: requirement-id}:",
+      "${1:requirement-id}:",
       "  description: >-",
-      "    ${2: requirement-description}"
+      "    ${2:requirement-description}"
     ],
     "description": "Project task requirement element"
   },
@@ -41,9 +41,9 @@
     "body": [
       "GENERAL:",
       "  requirements:",
-      "    ${1: requirement-id}:",
+      "    ${1:requirement-id}:",
       "      description: |-",
-      "        ${2: requirement-description}"
+      "        ${2:requirement-description}"
     ],
     "description": "Project general requirements"
   }
