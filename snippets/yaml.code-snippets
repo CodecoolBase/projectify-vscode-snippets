@@ -3,7 +3,7 @@
   "Project": {
     "prefix": "proj",
     "body": [
-      "name: $TM_DIRECTORY",
+      "name: ${1:project-name}",
       "title: ${2:Project title}",
       "prog-langs:",
       "  ${3|python,java,csharp,general,javascript,php,kotlin|}:",

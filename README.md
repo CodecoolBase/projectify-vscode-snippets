@@ -30,3 +30,14 @@ Before you dive into creating new projects please investigate our [projectify gu
 * `quiz`: creates an empty quiz without questions
 * `quiz-q`: question template insidea a quiz block
 * `tutorial`: generates a skeleton for a tutorial page
+
+## Installation
+
+1. Clone the repository
+2. Open a terminal
+3. Navigate to the repo folder
+4. Run the following command:
+
+    `code --install-extension projectify-snippets-1.0.0.vsix`
+
+5. Restart your VS Code

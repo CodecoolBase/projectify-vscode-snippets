@@ -1,9 +1,16 @@
 {
     "name": "projectify-snippets",
     "displayName": "Projectify snippets",
-    "description": "Code snippets for projectify Codecool curriculum.",
+    "description": "Code snippets for projectify of Codecool curriculum.",
     "version": "1.0.0",
     "publisher": "ngAtesz",
+    "author": {
+        "name": "Attila Molnár",
+        "email": "attila.molnar@codecool.com"
+    },
+    "repository": {
+        "url": "https://github.com/CodecoolBase/projectify-vscode-snippets"
+    },
     "engines": {
         "vscode": "^1.52.0"
     },
