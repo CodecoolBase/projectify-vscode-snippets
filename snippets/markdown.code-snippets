@@ -108,11 +108,11 @@
       "",
       "## Introduction",
       "",
-      "${3:Tutorials are either static pages with links to 3rd party tutorial sites or internal interactive coding exercises that help students to do the first steps in a topic and get some practical experience. Students usually solve them within hours and we don't check whether they solved it or not, it's up to them. Tutorials came into existence as we realized that there are projects (especially at the beginning of bigger topics e.g. a new language or technology) that some students cannot even start. So they require some hands-on, practical, step-by-step guidance with immediate feedback (that's why it's interactive). Tutorials are shown on the project map before projects containing new technologies.}",
+      "A concise introduction to the topic covered in this tutorial.",
       "",
       "## Tutorial",
       "",
-      "We'd like to ask you to complete this great tutorial:",
+      "Please complete the following great tutorial:",
       "",
       "<link-to-the-tutorial$0>",
       "",
@@ -121,6 +121,7 @@
       "## Background materials",
       "",
       "- :exclamation: [Further materials to understand this topic](link)"
-    ]
+    ],
+    "description": "Tutorials are either static pages with links to 3rd party tutorial sites or internal interactive coding exercises that help students to do the first steps in a topic and get some practical experience. Students usually solve them within hours and we don't check whether they solved it or not, it's up to them."
   }
 }
