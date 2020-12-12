@@ -13,6 +13,8 @@ First version of Codecool curriculum projectify snippet collection contains snip
   - language switch block for multi-language projects
   - quiz
   - syntax highlighted code block
+  - tutorial
+  - copmetencies
 
 ## [Unreleased]
 
