@@ -59,3 +59,29 @@ With this code snippet collection I would like to help to make easier and more p
     `code --install-extension projectify-1.1.1.vsix`
 
 5. Restart your VS Code
+
+---
+
+## Contribution
+
+If you want to change this extension please first read the corresponding documentation about VS Code extensions:
+
+* [Your first extension](https://code.visualstudio.com/api/get-started/your-first-extension)
+* [Snippet guide](https://code.visualstudio.com/api/language-extensions/snippet-guide)
+* [Code snippet detailed guide](https://www.freecodecamp.org/news/definitive-guide-to-snippets-visual-studio-code/)
+
+### Version update and packaging
+
+If you feel that you are good to go live follow these steps:
+
+1. [ ] Update pacage.json version number
+2. [ ] Update CHANGELOG.md
+3. [ ] Update README.md if needed (e.g. new feature)
+4. [ ] Delete previous vsix package
+5. [ ] Generate new package by running the following command
+
+    ```shell
+    vsce package --githubBranch=main
+    ```
+
+    > We need the github-branch option because our default branch in `main`
