@@ -32,7 +32,7 @@ With this code snippet collection I would like to help to make easier and more p
 
 ![Course yaml snippets](/images/course.gif)
 
-> You can read more about the different types of building blocks in course.yaml in our `[Guide: How to build and update a course in Journey](https://codecool.atlassian.net/wiki/spaces/WOR/pages/1276706892/Guide+How+to+build+and+update+a+course+in+Journey+technical+quide#Group)`
+> You can read more about the different types of building blocks of course.yaml in our [Guide: How to build and update a course in Journey](https://codecool.atlassian.net/wiki/spaces/WOR/pages/1276706892/Guide+How+to+build+and+update+a+course+in+Journey+technical+quide#Group)
 
 ### Inside markdown files
 
