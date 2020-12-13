@@ -1,15 +1,21 @@
 {
-    "name": "projectify-snippets",
-    "displayName": "Projectify snippets",
+    "name": "projectify",
+    "displayName": "Projectify",
     "description": "Code snippets for projectify of Codecool curriculum.",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "publisher": "ngAtesz",
+    "icon": "images/logo.png",
     "author": {
         "name": "Attila Molnár",
         "email": "attila.molnar@codecool.com"
     },
     "repository": {
+        "type": "git",
         "url": "https://github.com/CodecoolBase/projectify-vscode-snippets"
+    },
+    "bugs": {
+        "url": "https://github.com/CodecoolBase/projectify-vscode-snippets/issues",
+        "email": "attila.molnar@codecool.com"
     },
     "engines": {
         "vscode": "^1.52.0"
@@ -32,5 +38,6 @@
                 "path": "./snippets/javascript.code-snippets"
             }
         ]
-    }
+    },
+    "homepage": "https://github.com/CodecoolBase/projectify-vscode-snippets/blob/main/README.md"
 }

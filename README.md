@@ -1,4 +1,4 @@
-# Projectify snippets
+# Projectify
 
 Developing curriculum in Codecool is not the simplest thing to do as a mentor.
 With this code snippet collection I would like to help to make easier and more pleasant to create new content in our curriculum.
@@ -18,6 +18,8 @@ With this code snippet collection I would like to help to make easier and more p
 * `general`: creates GENERAL requirement block
 
 ![Tasks yaml snippets](images/tasks.gif)
+
+#### General tasks
 
 ![General task](images/general.gif)
 
@@ -54,6 +56,6 @@ With this code snippet collection I would like to help to make easier and more p
 3. Navigate to the repo folder
 4. Run the following command:
 
-    `code --install-extension projectify-snippets-1.1.1.vsix`
+    `code --install-extension projectify-1.1.1.vsix`
 
 5. Restart your VS Code
