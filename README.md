@@ -25,8 +25,8 @@ With this code snippet collection I would like to help to make easier and more p
 
 * `group`: generates a group node
 * `proj`: generates a project node
-* `tut`: generates a tutorial node
-* `mile`: generates a milestone node
+* `tut`: generates a tutorial node, id automatically parsed to label
+* `mile`: generates a milestone node, id automatically parsed to label
 
 ![Course yaml snippets](/images/course.gif)
 
@@ -54,6 +54,6 @@ With this code snippet collection I would like to help to make easier and more p
 3. Navigate to the repo folder
 4. Run the following command:
 
-    `code --install-extension projectify-snippets-1.1.0.vsix`
+    `code --install-extension projectify-snippets-1.1.1.vsix`
 
 5. Restart your VS Code

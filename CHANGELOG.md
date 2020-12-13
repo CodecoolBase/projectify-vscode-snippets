@@ -2,6 +2,14 @@
 
 First version of Codecool curriculum projectify snippet collection contains snippets for the following content types:
 
+## 1.1.1
+
+- yaml
+  - Tutorial and milestone node's label tuning:
+    - tutorial `id: tut-introduction-to-css` -> `label: "Introduction To Css"`  
+    - milestone `id: mil-effective-programming-1` -> `label: "Milestone: EFFECTIVE PROGRAMMING 1"`
+  - Task: missing `extra` option added
+
 ## 1.1.0
 
 - course yaml snippets

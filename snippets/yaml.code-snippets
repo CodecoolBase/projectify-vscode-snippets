@@ -21,13 +21,14 @@
     "body": [
       "${1:task-name}:",
       "  title: ${2:title}",
+      "  extra: ${3|yes,no|}",
       "  description: >-",
-      "    ${3:description}",
-      "  tags: [${4:tags}]",
+      "    ${4:description}",
+      "  tags: [${5:tags}]",
       "  requirements:",
-      "    ${5:requirement-id}:",
+      "    ${6:requirement-id}:",
       "      description: >-",
-      "        ${6:requirement-description}",
+      "        ${7:requirement-description}",
       "    $0"
     ],
     "description": "Tasks are the main todos of the project, we can think of them as backlog items or user stories as well."
@@ -78,7 +79,7 @@
     "body": [
       "- type: tutorial",
       "  id: tut-${1:tutorial-name}",
-      "  label: \"${2:Tutorial}\"",
+      "  label: \"${1/((\\w+)\\-)/${2:/capitalize} /g}\"",
       "  contentPath: tutorials/$1.md",
       "$0"
     ],
@@ -89,7 +90,7 @@
     "body": [
       "- type: milestone",
       "  id: mil-${1:milestone-name}",
-      "  label: \"$1 milestone\"",
+      "  label: \"Milestone: ${1/((\\w+)\\-)/${2:/upcase} /g}\"",
       "  contentPath: milestones/$1.md",
       "$0"
     ],
