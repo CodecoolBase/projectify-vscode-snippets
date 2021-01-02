@@ -1,0 +1,23 @@
+name: Slack Notification
+on:
+  release:
+    types: [published]
+  
+  workflow_dispatch:
+
+jobs:
+  send_notification:
+    name: Slack Notification
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: mentors
+        SLACK_COLOR: '#3278BD'
+        SLACK_ICON: https://github.com/CodecoolBase/projectify-vscode-snippets/raw/main/images/logo.png
+        SLACK_MESSAGE: 'New release available. :fiesta_parrot: <https://github.com/CodecoolBase/projectify-vscode-snippets/releases|Check this out>'
+        SLACK_TITLE: Projectify VS Code snippets Update
+        SLACK_USERNAME: atesz
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
