@@ -17,7 +17,7 @@ jobs:
         SLACK_CHANNEL: mentors
         SLACK_COLOR: '#3278BD'
         SLACK_ICON: https://github.com/CodecoolBase/projectify-vscode-snippets/raw/main/images/logo.png
-        SLACK_MESSAGE: 'New release available. :fiesta_parrot: <https://github.com/CodecoolBase/projectify-vscode-snippets/releases|Check this out>'
-        SLACK_TITLE: Projectify VS Code snippets Update
-        SLACK_USERNAME: atesz
+        SLACK_MESSAGE: 'Developing curriculum in Codecool is not the simplest thing to do as a mentor. With this code snippet collection I would like to help to make easier and more pleasant to create new content in our curriculum. :fiesta_parrot: <https://github.com/CodecoolBase/projectify-vscode-snippets/releases|Check the new version here>'
+        SLACK_TITLE: Projectify VS Code snippets - NEW VERSION
+        SLACK_USERNAME: attila.molnar
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
