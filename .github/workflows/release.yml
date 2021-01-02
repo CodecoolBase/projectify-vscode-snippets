@@ -23,10 +23,8 @@ jobs:
 
       - name: Build project
         uses: lannonbr/vsce-action@master
-        env:
-          ASSET_NAME: projectify-${{ steps.tag_name.outputs.SOURCE_TAG }}.vsix
         with:
-          args: "package --githubBranch=main -o $ASSET_NAME"
+          args: "package --githubBranch=main -o ./projectify.vsix"
 
       - name: Create Release
         id: create_release
@@ -36,7 +34,7 @@ jobs:
           SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: "$SOURCE_TAG Projectify VS Code - Code snippets extension"
+          release_name: $SOURCE_TAG
           draft: false
           prerelease: false
 
@@ -48,6 +46,6 @@ jobs:
           ASSET_NAME: projectify-${{ steps.tag_name.outputs.SOURCE_TAG }}.vsix
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: "./$ASSET_NAME"
-          asset_name: $ASSET_NAME
+          asset_path: "./projectify.vsix"
+          asset_name: projectify.vsix
           asset_content_type: application/vsix
