@@ -20,12 +20,11 @@ jobs:
         id: tag_name
         run: |
           echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
-          echo ::set-output name=ASSET_NAME::projectify-$SOURCE_TAG.vsix
 
       - name: Build project
         uses: lannonbr/vsce-action@master
         env:
-          ASSET_NAME: ${{ steps.tag_name.outputs.ASSET_NAME }}
+          ASSET_NAME: projectify-${{ steps.tag_name.outputs.SOURCE_TAG }}.vsix
         with:
           args: "package --githubBranch=main -o $ASSET_NAME"
 
@@ -47,7 +46,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
-          ASSET_NAME: ${{ steps.tag_name.outputs.ASSET_NAME }}
+          ASSET_NAME: projectify-${{ steps.tag_name.outputs.SOURCE_TAG }}.vsix
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           asset_path: "./$ASSET_NAME"
