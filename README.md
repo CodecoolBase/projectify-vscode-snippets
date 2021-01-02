@@ -85,3 +85,5 @@ If you feel that you are good to go live follow these steps:
     ```
 
     > We need the github-branch option because our default branch in `main`
+
+6. [ ] [Create new release on GitHub](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) with the new installer
