@@ -1,7 +1,5 @@
 # Change Log
 
-First version of Codecool curriculum projectify snippet collection contains snippets for the following content types:
-
 ## 1.1.2
 
 - Fix: broken images links
@@ -25,6 +23,8 @@ First version of Codecool curriculum projectify snippet collection contains snip
   - tutorial simplified
 
 ## 1.0.0
+
+First version of Codecool curriculum projectify snippet collection contains snippets for the following content types:
 
 - yaml
   - project meta data
