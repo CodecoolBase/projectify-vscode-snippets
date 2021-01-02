@@ -38,9 +38,9 @@
   "Language switch": {
     "prefix": "if-lang",
     "body": [
-      "{% if prog_lang == \"${1|python,java,csharp,javascript,kotlin,php|}\" %}",
+      "{% if prog_lang == \"${1|python,java,csharp,javascript,kotlin,php,angular,react,vue|}\" %}",
       "$0",
-      "{% elif prog_lang ==  \"${2|python,java,csharp,javascript,kotlin,php|}\" %}",
+      "{% elif prog_lang ==  \"${2|python,java,csharp,javascript,kotlin,php,angular,react,vue|}\" %}",
       "",
       "{% endif %}"
     ],

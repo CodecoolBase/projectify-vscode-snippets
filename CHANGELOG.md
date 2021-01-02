@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.3
+
+- Fix: Language switch extended with `angular,react,vue`
+
 ## 1.1.2
 
 - Fix: broken images links
