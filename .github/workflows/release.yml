@@ -15,20 +15,28 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Tag name
+        id: tag_name
+        run: |
+          echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
       
       - name: Build project
         uses: lannonbr/vsce-action@master
+        env:
+          SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
         with:
-          args: "package --githubBranch=main -o projectify-${{ github.ref }}.vsix"
+          args: "package --githubBranch=main -o projectify-${{ SOURCE_TAG }}.vsix"
       
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }} Projectify VS Code - Code snippets extension
+          release_name: ${{ SOURCE_TAG }} Projectify VS Code - Code snippets extension
           draft: false
           prerelease: false
           
@@ -37,8 +45,9 @@ jobs:
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./projectify-${{ github.ref }}.vsix
-          asset_name: projectify-${{ github.ref }}.vsix
+          asset_path: ./projectify-${{ SOURCE_TAG }}.vsix
+          asset_name: projectify-${{ SOURCE_TAG }}.vsix
           asset_content_type: application/vsix
