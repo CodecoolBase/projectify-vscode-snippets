@@ -31,10 +31,9 @@ jobs:
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: ${{ SOURCE_TAG }}
+          release_name: ${{ steps.tag_name.outputs.SOURCE_TAG }}
           draft: false
           prerelease: false
 
