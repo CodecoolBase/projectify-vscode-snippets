@@ -56,7 +56,7 @@ With this code snippet collection I would like to help to make easier and more p
 3. Navigate to the folder where you downloaded the installer
 4. Run the following command:
 
-    `code --install-extension projectify-1.x.x.vsix`
+    `code --install-extension projectify.vsix`
 
 5. Restart your VS Code
 
@@ -77,13 +77,5 @@ If you feel that you are good to go live follow these steps:
 1. [ ] Update pacage.json version number
 2. [ ] Update CHANGELOG.md
 3. [ ] Update README.md if needed (e.g. new feature)
-4. [ ] Delete previous vsix package
-5. [ ] Generate new package by running the following command
-
-    ```shell
-    vsce package --githubBranch=main
-    ```
-
-    > We need the github-branch option because our default branch in `main`
-
-6. [ ] [Create new release on GitHub](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) with the new installer
+4. [ ] Tag the commit with the new version number (`v1.x.x`) and push to origin
+5. [ ] GitHub Action automatically triggered. Check result on [Actions tab](https://github.com/CodecoolBase/projectify-vscode-snippets/actions)
