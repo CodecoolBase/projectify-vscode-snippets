@@ -36,7 +36,7 @@ jobs:
           SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
         with:
           tag_name: $SOURCE_TAG
-          release_name: $SOURCE_TAG Projectify VS Code - Code snippets extension
+          release_name: "$SOURCE_TAG Projectify VS Code - Code snippets extension"
           draft: false
           prerelease: false
 
@@ -45,7 +45,6 @@ jobs:
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
           ASSET_NAME: projectify-${{ steps.tag_name.outputs.SOURCE_TAG }}.vsix
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
